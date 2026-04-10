@@ -17,7 +17,6 @@
       `;
     }
 
-    // 1. API returns 404 (response.ok = false)
     document.getElementById("fetchBtn").addEventListener("click", async () => {
       try {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts/9999");
@@ -34,7 +33,7 @@
       }
     });
 
-    // 2. Completely broken URL (network error)
+    
     document.getElementById("brokenBtn").addEventListener("click", async () => {
       try {
         const response = await fetch("https://this-url-does-not-exist-12345.com");
